@@ -8,4 +8,6 @@ consul:
   client:
     registration:
       enabled: true
+      check:
+        deregister-critical-service-after: 10s
     defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"

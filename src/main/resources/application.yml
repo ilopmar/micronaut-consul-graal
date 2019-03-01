@@ -2,6 +2,9 @@
 micronaut:
     application:
         name: micronaut-consul-graal
+jackson:
+  module-scan: false
+  bean-introspection-module: true
 
 ---
 consul:
